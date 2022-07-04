@@ -1,0 +1,146 @@
+@import "../../Styles/helpers/main.scss";
+
+.body{
+    @include main;
+
+    .home-page-circle-1 {
+        position: absolute;
+        width: 18vh;
+        height: 18vh;
+        border-radius: 50%;
+        background-color: #2E3B39;
+        bottom: 15vh;
+        left: 4vw;
+        z-index: -1;
+    }
+    
+    .home-page-circle-2 {
+        position: absolute;
+        width: 20vh;
+        height: 20vh;
+        border-radius: 50%;
+        background-color: #2E353B;
+        top: 7vh;
+        left: 25vw;
+        z-index: -1;
+    }
+    
+    .home-page-circle-3 {
+        position: absolute;
+        width: 30vh;
+        height: 30vh;
+        border-radius: 50%;
+        background-color: #2E303B;
+        top: 20vh;
+        left: 45vw;
+        z-index: -1;
+    }
+    
+    .home-page-circle-4 {
+        position: absolute;
+        overflow: hidden;
+        width: 70vh;
+        height: 70vh;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+    
+    .home-page-circle-4::before {
+        content: '';
+        transform: translate(40%, 40%);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #332E3B;
+    }
+}
+
+.img-wrapper {
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+
+.my-image {
+    background-image: url("../../../public/my-photo.png");
+    display: flex;
+    flex-grow: 1;
+    max-height: 70vh;
+    min-width: 30vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.subtitle {
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 2rem;
+}
+
+.buttons {
+    padding: 0;
+    margin: 0px;
+    margin-top: 1rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.button {
+    @include btn;
+    transition: 0.1s;
+    border: 3px solid rgb(255, 255, 255);
+    color: inherit;
+    margin-right: 1rem
+}
+
+.button:hover {
+    transition: 0.3s;
+    border: 3px solid rgb(171, 171, 171);
+    color: rgb(171, 171, 171);
+}
+
+.linkButton {
+    @include btn;
+    background-color: #536EFF;
+    color: inherit;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.text-wrapper h1 {
+    justify-self: center;
+}
+
+.text-wrapper span {
+    justify-self: center;
+}
+
+@media (max-width: 900px) {
+    .img-wrapper {
+        display: none;
+    }
+
+    .text-wrapper {
+        align-items: center;
+    }
+}

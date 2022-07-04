@@ -1,0 +1,5 @@
+@import "../../Styles/helpers/main.scss";
+
+.body{
+    @include main;
+}

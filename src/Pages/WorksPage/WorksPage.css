@@ -1,0 +1,8 @@
+.body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-grow: 1;
+}/*# sourceMappingURL=WorksPage.css.map */
