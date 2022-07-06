@@ -5,24 +5,31 @@
 }
 
 .navbar {
-  width: 100%;
-  height: 80px;
-  
+  width: 220px;
+  height: 100%;
+
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
+
+  a {
+    margin-top: 45px;
+    color: $whiteColor;
+    text-decoration: none;
+  }
 
   ul {
-    margin-right: 50px;
+    padding-left: 0;
+    list-style-type: none;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     height: 100%;
-    direction: row;
 
     li {
-      list-style: none;
+      padding-bottom: 30px;
 
       a {
         color: scale-color($whiteColor, $lightness: -10%);
@@ -41,6 +48,16 @@
       .active {
         color: scale-color($whiteColor, $lightness: -30%);
       }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    width: 50px;
+
+    a{
+      padding-left: 25px
     }
   }
 }
