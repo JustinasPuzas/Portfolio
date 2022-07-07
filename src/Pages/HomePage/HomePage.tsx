@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 import "./HomePage.css";
 
@@ -18,9 +18,9 @@ export default function HomePage() {
             </NavLink>
           </li>
           <li>
-            <a href="pdf" className="linkButton">
+            <Link to="/JustinasPuzasCV.pdf" className="linkButton" target="_blank" download>
               Resume
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

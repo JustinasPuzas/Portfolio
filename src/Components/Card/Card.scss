@@ -1,44 +1,65 @@
-
-
 .card {
-    margin-top: 2vh;
-    margin-bottom: 4vh;
-    margin-left: 220px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: calc(100% - 220px);
-    min-height: 20vh;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(50px);
-    background-color: rgba(255, 255, 255, 0.03);
-    border-radius: 0.25rem;
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+  margin-left: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: calc(100% - 220px);
+  height: fit-content;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  // backdrop-filter: blur(50px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 0.25rem;
 }
 
 @media screen and (max-width: 900px) {
-    .card {
-        margin-left: 50px;
-        width: calc(100% - 50px);
-    }
+  .card {
+    margin-left: 50px;
+    width: calc(100% - 50px);
+  }
 }
 
 .card-body {
-    width: 100%;
+  width: 100%;
+  overflow: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px;
+  }
+
+  .card-paragraph {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
     overflow: wrap;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-
-    h2 {
-        font-size: 1.5rem;
-        font-weight: bold;
-        margin: 10px;
-    }
-
-    p {
-        margin-left: 20px;
-       overflow: wrap;
-    }
+  }
 }
+
+.card-content-grid-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card-content-grid {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  div {
+    margin: 10px;
+  }
+}
+

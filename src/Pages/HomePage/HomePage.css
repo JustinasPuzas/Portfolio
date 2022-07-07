@@ -92,17 +92,10 @@
 .text-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: center;
   margin: 1rem;
-}
-
-.text-wrapper h1 {
-  justify-self: center;
-}
-
-.text-wrapper span {
-  justify-self: center;
+  width: 100%;
 }
 
 @media (max-width: 900px) {

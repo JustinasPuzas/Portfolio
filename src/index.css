@@ -14,9 +14,16 @@ body {
 .flex-full-grow {
   min-height: 100vh;
   display:flex;
+  flex-grow: 1;
 }
 
-body div {
+#root {
+  display:flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.body{
   display:flex;
   flex-direction: row;
   flex-grow: 1;
