@@ -11,13 +11,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   position: fixed;
 
   a {
+    padding-left: 25px;
     margin-top: 45px;
     color: $whiteColor;
     text-decoration: none;
+    color: scale-color($whiteColor, $lightness: -20%);
+    &:hover {
+      color: $whiteColor;
+    }
   }
 
   ul {

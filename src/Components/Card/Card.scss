@@ -53,13 +53,9 @@
 
 .card-content-grid {
   margin-left: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-
-  div {
-    margin: 10px;
-  }
+  width: calc(100% - 20px);
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(110px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 130px));
 }
 

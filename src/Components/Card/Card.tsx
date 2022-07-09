@@ -7,8 +7,8 @@ export interface CardProps {
 
 const Card = (props: CardProps) => {
   return (
-    <div id={props.id} className="card">
-      <div className="card-body">{props.children}</div>
+    <div className="card">
+      <div id={props.id} className="card-body">{props.children}</div>
     </div>
   );
 };

@@ -1,6 +1,5 @@
 import { useState, forwardRef } from "react";
-import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
+import Tooltip from "@mui/material/Tooltip";
 import Dialog from "@mui/material/Dialog";
 import ListItemText from "@mui/material/ListItemText";
 import ListItem from "@mui/material/ListItem";
@@ -9,9 +8,9 @@ import Divider from "@mui/material/Divider";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
 import CloseIcon from "@mui/icons-material/Close";
 import Slide from "@mui/material/Slide";
+import Badge from "@mui/material/Badge";
 import { TransitionProps } from "@mui/material/transitions";
 
 import "./Dialog.css";
@@ -21,9 +20,11 @@ import { CourseDetailsProps, GithubProps } from "../../Interfaces/Skills";
 interface DialogWindowProps {
   text: string;
   title: string;
+  children?: React.ReactNode;
+  vilniusTech?: boolean;
   imgLink?: string;
-  courseDetails?: CourseDetailsProps;
-  github?: GithubProps[];
+  udemy?: boolean;
+  github?: boolean;
 }
 
 const Transition = forwardRef(function Transition(
@@ -38,27 +39,49 @@ const Transition = forwardRef(function Transition(
 const DialogWindow = ({
   text,
   title,
+  children,
   imgLink = "/favicon.ico",
-  courseDetails,
-  github
+  udemy,
+  github,
+  vilniusTech,
 }: DialogWindowProps) => {
   const [open, setOpen] = useState(false);
-
+  const clickable = vilniusTech || udemy || github || children;
+  
   const handleClickOpen = () => {
-    setOpen(true);
+    if(clickable)
+      setOpen(true);
   };
-
   const handleClose = () => {
     setOpen(false);
   };
 
   return (
     <>
-      <Avatar
-        src={imgLink}
-        sx={{ width: 75, height: 75 }}
+      <div
+        className={`dialog-icon-big ${clickable ? "clickable" : ""}`}
+        style={{ backgroundImage: `url(${imgLink})` }}
         onClick={handleClickOpen}
-      />
+      >
+        {github && (
+          <img
+            className="dialog-icon-badge"
+            src="/githubLogo.png"
+          ></img>
+        )}
+        {udemy && (
+          <img
+            className="dialog-icon-badge"
+            src="https://play-lh.googleusercontent.com/dsCkmJE2Fa8IjyXERAcwc5YeQ8_NvbZ4_OI8LgqyjILpXUfS5YhEcnAMajKPrZI-og"
+          ></img>
+        )}
+        {vilniusTech && (
+          <img
+            className="dialog-icon-badge"
+            src="https://yt3.ggpht.com/ytc/AKedOLRmYAgv1n_cAoGhIpuBJz5tUs8VI0POfntCDO_mrA=s900-c-k-c0x00ffffff-no-rj"
+          />
+        )}
+      </div>
       <Dialog
         className="app-dialog"
         fullScreen
@@ -90,32 +113,7 @@ const DialogWindow = ({
           <p className="card-paragraph dialog-paragraph">{text}</p>
           <Divider />
           <List>
-            {courseDetails && <p className="card-paragraph dialog-paragraph">Course List:</p>}
-            {courseDetails && (
-              <>
-                <ListItem button>
-                  <ListItemText
-                    primary={courseDetails.courseName}
-                    // secondary={courseDetails.courseLink}
-                    onClick={() => window.open(courseDetails.courseLink)}
-                  />
-                </ListItem>
-                <Divider />
-              </>
-            )}
-            {github && <p className="card-paragraph dialog-paragraph">Github Projects:</p>}
-            {github && github.map((item, index) => (
-                <>
-                <ListItem button>
-                  <ListItemText
-                    primary={item.githubName}
-                    // secondary={item.githubLink}
-                    onClick={() => window.open(item.githubLink)}
-                  />
-                </ListItem>
-                <Divider />
-                </>
-            ))}
+            {children}
           </List>
         </div>
       </Dialog>
