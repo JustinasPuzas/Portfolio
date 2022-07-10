@@ -8,7 +8,7 @@ import "./Skills.css";
 
 const REACT_COURSES = [
   {
-    url: "https://www.udemy.com/course-dashboard-redirect/?course_id=1362070",
+    url: "https://www.udemy.com/course/react-the-complete-guide-incl-redux/",
     name: "React - The Complete Guide (incl Hooks, React Router, Redux)",
     description:
       "React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications. However, React is not limited to web applications.",
