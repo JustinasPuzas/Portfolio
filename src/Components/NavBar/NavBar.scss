@@ -34,15 +34,38 @@
     height: 100%;
 
     li {
-      padding-bottom: 30px;
+      // display: flex;
+      // justify-content: flex-start;
+      // align-items: center;
+      height: 60px;
+      padding: 0;
 
       a {
+        display: flex;
+        align-items: center;
         color: scale-color($whiteColor, $lightness: -10%);
         text-decoration: none;
         font-size: 25px;
         font-weight: bold;
         font-family: $titleFont;
-        padding: 20px;
+        margin: 0;
+        padding: 0;
+
+        h3 {
+          padding-left: 10px;
+
+          @media screen and (max-width: 900px) {
+            display: none;
+          }
+        }
+
+        svg {
+          padding-left: 25px;
+
+          @media screen and (min-width: 900px) {
+            display: none;
+          }
+        }
 
         &:hover {
           color: $whiteColor;
@@ -61,8 +84,8 @@
   .navbar {
     width: 50px;
 
-    a{
-      padding-left: 25px
+    a {
+      padding-left: 25px;
     }
   }
 }

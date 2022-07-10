@@ -2,6 +2,9 @@ import { useState } from "react";
 import DialogWindow from "../Dialog/Dialog";
 import Github from "./Github/Github";
 import Udemy from "./Udemy/Udemy";
+import HandymanOutlinedIcon from '@mui/icons-material/HandymanOutlined';
+
+import "./Skills.css";
 
 const REACT_COURSES = [
   {
@@ -53,12 +56,54 @@ const TYPESCRIPT_GITHUB = [
     url: "https://github.com/JustinasPuzas/notes-back-end",
     description: "A note taker application backend",
   },
+  {
+    name: "Lilu music bot backend",
+    url: "https://github.com/JustinasPuzas/edv-back-end",
+    description:
+      "Backend for the Lilu music bot connecting dashboard with bot client",
+  },
+];
+
+const REACT_GITHUB = [
+  {
+    name: "My Portfolio",
+    url: "https://github.com/JustinasPuzas/Portfolio",
+    description: "My portfolio website code",
+  },
+  {
+    name: "Note Taker",
+    url: "https://github.com/JustinasPuzas/notes-front-end",
+    description: "A note taker application frontend",
+  },
+  {
+    name: "Lilu music bot frontend",
+    url: "https://github.com/JustinasPuzas/edv-front-end",
+    description: "DashBoard for the Lilu music bot",
+  },
+];
+
+const DISCORDJS_GITHUB = [
+  {
+    name: "Tairi Discord Bot",
+    url: "https://github.com/JustinasPuzas/tairi",
+    description:
+      "A simple discord bot for reputation system and displaying user profiles with collected data",
+  },
+  {
+    name: "Lilu Music Bot",
+    url: "https://github.com/JustinasPuzas/edv-radio-end",
+    description:
+      "Discord bot for playing music with multiple guild support and dashboard",
+  },
 ];
 
 const Skills = () => {
   return (
     <>
-      <h2 className="card-title">Skills</h2>
+      <div className="title-container">
+        <HandymanOutlinedIcon fontSize="large" />
+        <h2 className="card-title">Skills</h2>
+      </div>
       <div id="about-me" className="card-content-grid-body">
         <p className="card-paragraph">Programing Languages</p>
         <div className="card-content-grid">
@@ -94,7 +139,14 @@ const Skills = () => {
         </div>
         <p className="card-paragraph">FrameWorks and Libraries</p>
         <div className="card-content-grid">
-          <DialogWindow title="React" text="React" imgLink="/logo512.png" udemy>
+          <DialogWindow
+            title="React"
+            text="React"
+            imgLink="/logo512.png"
+            udemy
+            github
+          >
+            <Github repositorys={REACT_GITHUB} />
             <Udemy courses={REACT_COURSES} />
           </DialogWindow>
           <DialogWindow title="Node js" text="" imgLink="/nodejsLogo.png" />
@@ -104,11 +156,17 @@ const Skills = () => {
             imgLink="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/2048px-GraphQL_Logo.svg.png"
           />
           <DialogWindow title="MongoDB" text="" imgLink="mongoDBLogo.png" />
-          <DialogWindow title="Express" text="" imgLink="/expressLogo.png" />
+          <DialogWindow
+            title="Express"
+            text=""
+            imgLink="/expressLogo.png"
+            vilniusTech
+          />
           <DialogWindow
             title="Chai"
             text=""
             imgLink="https://avatars.githubusercontent.com/u/1515293"
+            vilniusTech
           />
           <DialogWindow
             title="MUI"
@@ -119,7 +177,10 @@ const Skills = () => {
             title="Discord js"
             text=""
             imgLink="https://discord.js.org/static/djs_logo.png"
-          />
+            github
+          >
+            <Github repositorys={DISCORDJS_GITHUB} />
+          </DialogWindow>
           <DialogWindow
             title="TensorFlow"
             text="TensorFlow"
@@ -134,7 +195,7 @@ const Skills = () => {
         <div className="card-content-grid">
           <DialogWindow
             title="Figma"
-            text=""
+            text="During UI/UX design curriculum I used Figma to create wireframes and prototypes."
             imgLink="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
             vilniusTech
           />
@@ -142,11 +203,13 @@ const Skills = () => {
             title="Adobe Illustrator"
             text=""
             imgLink="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/2101px-Adobe_Illustrator_CC_icon.svg.png"
+            vilniusTech
           />
           <DialogWindow
             title="Adobe Photoshop"
             text=""
             imgLink="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/640px-Adobe_Photoshop_CC_icon.svg.png"
+            vilniusTech
           />
           <DialogWindow
             title="Adobe After Effects"

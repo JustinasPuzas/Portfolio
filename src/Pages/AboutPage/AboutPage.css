@@ -15,4 +15,16 @@
   justify-content: center;
   width: 100%;
   height: 75vh;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 8px;
+}
+@media screen and (min-width: 900px) {
+  .title-container svg {
+    display: none;
+  }
 }/*# sourceMappingURL=AboutPage.css.map */

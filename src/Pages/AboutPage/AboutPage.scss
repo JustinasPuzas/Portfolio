@@ -14,3 +14,16 @@
   height: 75vh;
 
 }
+
+.title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 8px;
+
+  svg {
+    @media screen and (min-width: 900px) {
+      display: none;
+    }
+  }
+}

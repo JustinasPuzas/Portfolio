@@ -30,15 +30,35 @@
   height: 100%;
 }
 .navbar ul li {
-  padding-bottom: 30px;
+  height: 60px;
+  padding: 0;
 }
 .navbar ul li a {
+  display: flex;
+  align-items: center;
   color: #d1d1d1;
   text-decoration: none;
   font-size: 25px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 20px;
+  margin: 0;
+  padding: 0;
+}
+.navbar ul li a h3 {
+  padding-left: 10px;
+}
+@media screen and (max-width: 900px) {
+  .navbar ul li a h3 {
+    display: none;
+  }
+}
+.navbar ul li a svg {
+  padding-left: 25px;
+}
+@media screen and (min-width: 900px) {
+  .navbar ul li a svg {
+    display: none;
+  }
 }
 .navbar ul li a:hover {
   color: rgb(232, 232, 232);

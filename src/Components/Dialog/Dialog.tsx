@@ -46,7 +46,7 @@ const DialogWindow = ({
   vilniusTech,
 }: DialogWindowProps) => {
   const [open, setOpen] = useState(false);
-  const clickable = vilniusTech || udemy || github || children;
+  const clickable = children || text;
   
   const handleClickOpen = () => {
     if(clickable)
