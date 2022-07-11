@@ -10,7 +10,7 @@ export default function HomePage() {
       </div>
       <div className="text-wrapper">
         <h1 className="title">Justinas Puzas</h1>
-        <span className="subtitle">Front end Developer</span>
+        <span className="subtitle">Software Engineer</span>
         <ul className="buttons">
           <li>
             <NavLink to="/about" className="button">
