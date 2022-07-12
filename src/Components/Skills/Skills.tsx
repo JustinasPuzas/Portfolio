@@ -110,7 +110,7 @@ const Skills = () => {
           <DialogWindow
             title="TypeScript"
             text="I created a back-end services for storing notes and course system using MERN stack, a BlackJack game based on OOP principles and worked on multiple discord bots for guild moderation and adding unique features."
-            imgLink="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png"
+            imgLink="/logo/typescript/logo512.webp"
             github
           >
             <Github repositorys={TYPESCRIPT_GITHUB} />
@@ -118,13 +118,13 @@ const Skills = () => {
           <DialogWindow
             title="JavaScript"
             text="Following Udemy courses and Curriculum. Created web applications: tic tac toe game, restaurant webpage and more also acquired expieriance in various frameworks."
-            imgLink="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+            imgLink="/logo/javascript/logo512.webp"
             vilniusTech
           />
           <DialogWindow
             title="Python"
             text={`Following Udemy courses. Got introduced in web application development with flask, learned basics of automation and testing and got familiar with machine learning and data science witch I followed up with separate course on TensorFlow.`}
-            imgLink="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png"
+            imgLink="/logo/python/logo512.webp"
             vilniusTech
             udemy
           >
@@ -134,7 +134,7 @@ const Skills = () => {
             title="C++"
             text=""
             vilniusTech
-            imgLink="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png"
+            imgLink="/logo/cpp/logo512.webp"
           />
         </div>
         <p className="card-paragraph">FrameWorks and Libraries</p>
