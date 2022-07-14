@@ -141,7 +141,7 @@ const Skills = () => {
         <div className="card-content-grid">
           <DialogWindow
             title="React"
-            text="React"
+            text=""
             imgLink="/logo512.png"
             udemy
             github
@@ -183,7 +183,7 @@ const Skills = () => {
           </DialogWindow>
           <DialogWindow
             title="TensorFlow"
-            text="TensorFlow"
+            text=""
             imgLink="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tensorflow_logo.svg/1200px-Tensorflow_logo.svg.png"
             vilniusTech
             udemy
