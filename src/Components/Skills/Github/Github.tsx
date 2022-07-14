@@ -19,9 +19,9 @@ const Github = ({ repositorys }: GithubProps) => {
   };
 
   return (
-    <>
+    <div className="github-background">
       <h2 className="dialog-title">Github</h2>
-      {repositorys.map(({ name, url, description }) => (
+      {repositorys.map(({ name, url, description }, index) => (
         <>
           <ListItem onClick={() => handleClick(url)} button key={url}>
             <img
@@ -34,10 +34,10 @@ const Github = ({ repositorys }: GithubProps) => {
               <p className="dialog-list-description">{description}</p>
             </div>
           </ListItem>
-          <Divider />
+          {index !== repositorys.length - 1 && <Divider />}
         </>
       ))}
-    </>
+    </div>
   );
 };
 

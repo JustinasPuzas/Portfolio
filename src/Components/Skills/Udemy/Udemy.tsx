@@ -18,7 +18,7 @@ interface Course {
 
 const Udemy = ({ courses }: CourseProps) => {
   return (
-    <>
+    <div className="udemy-background">
       <h2 className="dialog-title">Udemy</h2>
       {courses.map(
         ({ name, url, description, certificateURL, certificateImg }) => (
@@ -35,11 +35,10 @@ const Udemy = ({ courses }: CourseProps) => {
                 alt={`${name} certificate`}
               />
             </ListItem>
-            <Divider />
           </>
         )
       )}
-    </>
+    </div>
   );
 };
 

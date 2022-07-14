@@ -1,4 +1,12 @@
+@import "../../../Styles/Variables/Variables.scss";
+
 .dialog-udemy-certificate {
     width: 50%;
     margin-left: 20px;
+}
+
+.udemy-background {
+    background-color: $grayColor;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }

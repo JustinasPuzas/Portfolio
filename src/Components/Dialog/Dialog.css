@@ -8,33 +8,45 @@
   justify-self: center;
 }
 .app-dialog .MuiDialog-container .MuiPaper-root {
-  background-color: #4c4e5f;
+  box-shadow: none;
   color: white;
+  background-color: transparent;
 }
 .app-dialog .MuiDialog-container .MuiPaper-root header {
   background-color: #272832;
 }
 
-@media screen and (max-width: 900px) {
-  .dialog-paragraph {
-    min-width: 90%;
-  }
-  .app-dialog .MuiDialog-container {
-    width: 100%;
-  }
-}
 .dialog-container {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
   justify-content: flex-start;
 }
-
-.dialog-paragraph {
-  width: 50%;
-  padding-left: 20px;
+.dialog-container ul {
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
+.dialog-paragraph {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #32323c;
+  padding-right: 30%;
+  width: calc(100% - 20px - 30%);
+  padding-left: 20px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .dialog-paragraph {
+    width: calc(100% - 40px);
+    padding-right: 20px;
+  }
+  .app-dialog .MuiDialog-container {
+    width: 100%;
+  }
+}
 .dialog-icon {
   width: 50px;
   height: 50px;
@@ -69,6 +81,12 @@
   transition: 0.3s;
 }
 
+.dialog-list {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  z-index: 1;
+}
+
 .dialog-list-text {
   font-size: 1.2rem;
   font-weight: lighter;
@@ -96,5 +114,10 @@
 .dialog-title {
   font-size: 1.5rem;
   font-weight: bold;
-  margin: 10px;
+  padding: 10px;
+  margin: 0;
+}
+
+.dialog-wave path {
+  fill: 32323c;
 }/*# sourceMappingURL=Dialog.css.map */

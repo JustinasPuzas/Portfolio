@@ -1,3 +1,5 @@
+@import "../../Styles/Variables/Variables.scss";
+
 .app-dialog {
   display: flex;
   justify-content: center;
@@ -6,23 +8,13 @@
     width: 70%;
     justify-self: center;
     .MuiPaper-root {
+      box-shadow: none;
       header {
-        background-color: #272832;
+        background-color: $blackColor;
       }
-      background-color: #4c4e5f;
       color: white;
-    }
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .dialog-paragraph {
-    min-width: 90%;
-  }
-
-  .app-dialog {
-    .MuiDialog-container {
-      width: 100%;
+      background-color: transparent;
+      
     }
   }
 }
@@ -32,13 +24,37 @@
   flex-direction: column;
   align-content: flex-start;
   justify-content: flex-start;
+
+  ul {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
   // padding: 0 40px;
   // width: calc(100% - 80px);
 }
 
 .dialog-paragraph {
-  width: 50%;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #32323c;
+  padding-right: 30%;
+  width: calc(100% - 20px - 30%);
   padding-left: 20px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .dialog-paragraph {
+    width: calc(100% - 40px);
+    padding-right: 20px;
+  }
+
+  .app-dialog {
+    .MuiDialog-container {
+      width: 100%;
+    }
+  }
 }
 
 .dialog-icon {
@@ -77,7 +93,13 @@
   transition: 0.3s;
 }
 
-.dialog-list-text{
+.dialog-list {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  z-index: 1;
+}
+
+.dialog-list-text {
   font-size: 1.2rem;
   font-weight: lighter;
   margin-top: 5px;
@@ -85,14 +107,14 @@
   overflow: wrap;
 }
 
-.dialog-list-title{
+.dialog-list-title {
   font-size: 1.2rem;
   font-weight: bold;
   margin: 10px;
-  margin-top:20px
+  margin-top: 20px;
 }
 
-.dialog-list-description{
+.dialog-list-description {
   font-size: 1.2rem;
   font-weight: lighter;
   margin-top: 5px;
@@ -104,5 +126,33 @@
 .dialog-title {
   font-size: 1.5rem;
   font-weight: bold;
-  margin: 10px;
+  padding: 10px;
+  margin: 0;
+}
+
+// .home-page-circle-4 {
+//   position: fixed;
+//   overflow: hidden;
+//   width: 70vh;
+//   height: 70vh;
+//   bottom: 0;
+//   right: 0;
+//   z-index: -1;
+// }
+
+// .home-page-circle-4::before {
+//   content: '';
+//   transform: translate(40%, 40%);
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   border-radius: 50%;
+//   background-color: #332E3B;
+// }
+
+.dialog-wave {
+  
+  path{
+    fill: 32323c;
+  }
 }
