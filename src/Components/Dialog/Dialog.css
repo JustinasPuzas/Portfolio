@@ -118,6 +118,7 @@
   margin: 0;
 }
 
-.dialog-wave path {
-  fill: 32323c;
+.dialog-wave {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=Dialog.css.map */
