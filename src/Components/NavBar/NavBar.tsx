@@ -25,7 +25,7 @@ export default function NavBar() {
           <NavLink
             className={({ isActive }) => (isActive ? "active" : undefined)}
             onClick={() => scroll("#about-me")}
-            to="/about#about-me"
+            to="/about"
           >
             <InfoOutlinedIcon fontSize="large" />
             <h3>About</h3>
@@ -35,7 +35,7 @@ export default function NavBar() {
           <NavLink
             className={({ isActive }) => (isActive ? "active" : undefined)}
             onClick={() => scroll("#skills")}
-            to="/about#skills"
+            to="/about"
           >
             <HandymanOutlinedIcon fontSize="large" />
             <h3>Skills</h3>
@@ -45,7 +45,7 @@ export default function NavBar() {
           <NavLink
             className={({ isActive }) => (isActive ? "active" : undefined)}
             onClick={() => scroll("#education")}
-            to="/about#education"
+            to="/about"
           >
             <SchoolOutlinedIcon fontSize="large" />
             <h3>Education</h3>
@@ -55,7 +55,7 @@ export default function NavBar() {
           <NavLink
             className={({ isActive }) => (isActive ? "active" : undefined)}
             onClick={() => scroll("#contacts")}
-            to="/about#contacts"
+            to="/about"
           >
             <ContactPhoneOutlinedIcon fontSize="large" />
             <h3>Contacts</h3>
