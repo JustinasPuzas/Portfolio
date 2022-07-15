@@ -3,6 +3,7 @@ import DialogWindow from "../Dialog/Dialog";
 import Github from "./Github/Github";
 import Udemy from "./Udemy/Udemy";
 import HandymanOutlinedIcon from '@mui/icons-material/HandymanOutlined';
+import Gallery from "./Gallery/Gallery";
 
 import "./Skills.css";
 
@@ -94,6 +95,21 @@ const DISCORDJS_GITHUB = [
     url: "https://github.com/JustinasPuzas/edv-radio-end",
     description:
       "Discord bot for playing music with multiple guild support and dashboard",
+  },
+];
+
+const ADOBE_ILLUSTRATOR = [
+  {
+    url: "https://cdn.discordapp.com/attachments/885163400995414056/953664003966644254/augis.png",
+    title: "=== Augustinas ===",
+    rows: 3,
+    cols: 3,
+  },
+  {
+    url: "https://cdn.discordapp.com/attachments/885163400995414056/952596903449731162/Ronaldas.png",
+    title: "=== Ronaldas ===",
+    rows: 3,
+    cols: 2,
   },
 ];
 
@@ -204,7 +220,9 @@ const Skills = () => {
             text=""
             imgLink="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/2101px-Adobe_Illustrator_CC_icon.svg.png"
             vilniusTech
-          />
+          >
+            <Gallery pictures={ADOBE_ILLUSTRATOR}/>
+            </DialogWindow>
           <DialogWindow
             title="Adobe Photoshop"
             text=""

@@ -1,1 +1,8 @@
-/*# sourceMappingURL=Gallery.css.map */
+.gallery-container {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-background {
+  background-color: #32323c;
+}/*# sourceMappingURL=Gallery.css.map */
