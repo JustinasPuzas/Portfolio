@@ -79,6 +79,7 @@
   transform: translateY(-10px) scale(1.2);
   filter: brightness(130%);
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .dialog-list {

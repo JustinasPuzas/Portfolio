@@ -2,7 +2,7 @@ import { useState } from "react";
 import DialogWindow from "../Dialog/Dialog";
 import Github from "./Github/Github";
 import Udemy from "./Udemy/Udemy";
-import HandymanOutlinedIcon from '@mui/icons-material/HandymanOutlined';
+import HandymanOutlinedIcon from "@mui/icons-material/HandymanOutlined";
 import Gallery from "./Gallery/Gallery";
 
 import "./Skills.css";
@@ -146,12 +146,7 @@ const Skills = () => {
           >
             <Udemy courses={PYTHON_COURSES} />
           </DialogWindow>
-          <DialogWindow
-            title="C++"
-            text=""
-            vilniusTech
-            imgLink="/logo/cpp/logo512.webp"
-          />
+          <DialogWindow title="C++" text="" imgLink="/logo/cpp/logo512.webp" />
         </div>
         <p className="card-paragraph">FrameWorks and Libraries</p>
         <div className="card-content-grid">
@@ -165,30 +160,6 @@ const Skills = () => {
             <Github repositorys={REACT_GITHUB} />
             <Udemy courses={REACT_COURSES} />
           </DialogWindow>
-          <DialogWindow title="Node js" text="" imgLink="/nodejsLogo.png" />
-          <DialogWindow
-            title="GraphQL"
-            text=""
-            imgLink="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/2048px-GraphQL_Logo.svg.png"
-          />
-          <DialogWindow title="MongoDB" text="" imgLink="mongoDBLogo.png" />
-          <DialogWindow
-            title="Express"
-            text=""
-            imgLink="/expressLogo.png"
-            vilniusTech
-          />
-          <DialogWindow
-            title="Chai"
-            text=""
-            imgLink="https://avatars.githubusercontent.com/u/1515293"
-            vilniusTech
-          />
-          <DialogWindow
-            title="MUI"
-            text=""
-            imgLink="https://mui.com/static/logo.png"
-          />
           <DialogWindow
             title="Discord js"
             text=""
@@ -206,28 +177,45 @@ const Skills = () => {
           >
             <Udemy courses={TENSORFLOW_COURSES} />
           </DialogWindow>
+          <DialogWindow title="Node js" text="" imgLink="/nodejsLogo.png" />
+          <DialogWindow
+            title="GraphQL"
+            text=""
+            imgLink="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/2048px-GraphQL_Logo.svg.png"
+          />
+          <DialogWindow title="MongoDB" text="" imgLink="mongoDBLogo.png" />
+          <DialogWindow title="Express" text="" imgLink="/expressLogo.png" />
+          <DialogWindow
+            title="Chai"
+            text=""
+            imgLink="https://avatars.githubusercontent.com/u/1515293"
+          />
+          <DialogWindow
+            title="MUI"
+            text=""
+            imgLink="https://mui.com/static/logo.png"
+          />
         </div>
         <p className="card-paragraph">Other</p>
         <div className="card-content-grid">
           <DialogWindow
             title="Figma"
-            text="During UI/UX design curriculum I used Figma to create wireframes and prototypes."
+            text="During UI/UX design curriculum I used Figma to create wireframes and prototypes. Also prototyped my Portfolio website."
             imgLink="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
             vilniusTech
           />
           <DialogWindow
             title="Adobe Illustrator"
-            text=""
+            text="During Graphic design curriculum I used Adobe Illustrator to remake provided icons with vectors, and created my own icons, logos and ilustrations."
             imgLink="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/2101px-Adobe_Illustrator_CC_icon.svg.png"
             vilniusTech
           >
-            <Gallery pictures={ADOBE_ILLUSTRATOR}/>
-            </DialogWindow>
+            <Gallery pictures={ADOBE_ILLUSTRATOR} />
+          </DialogWindow>
           <DialogWindow
             title="Adobe Photoshop"
             text=""
             imgLink="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/640px-Adobe_Photoshop_CC_icon.svg.png"
-            vilniusTech
           />
           <DialogWindow
             title="Adobe After Effects"
