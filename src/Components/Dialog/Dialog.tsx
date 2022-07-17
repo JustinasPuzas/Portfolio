@@ -9,8 +9,6 @@ import Slide from "@mui/material/Slide";
 import { TransitionProps } from "@mui/material/transitions";
 
 import "./Dialog.css";
-import { isNullishCoalesce } from "typescript";
-import { CourseDetailsProps, GithubProps } from "../../Interfaces/Skills";
 
 interface DialogWindowProps {
   text: string;
@@ -20,6 +18,8 @@ interface DialogWindowProps {
   imgLink?: string;
   udemy?: boolean;
   github?: boolean;
+  linkedIn?: boolean;
+  gallery?: boolean;
 }
 
 const Transition = forwardRef(function Transition(
@@ -39,6 +39,8 @@ const DialogWindow = ({
   udemy,
   github,
   vilniusTech,
+  linkedIn,
+  gallery
 }: DialogWindowProps) => {
   const [open, setOpen] = useState(false);
   const clickable = children || text;
@@ -58,18 +60,30 @@ const DialogWindow = ({
         onClick={handleClickOpen}
       >
         {github && (
-          <img className="dialog-icon-badge" src="/githubLogo.png"></img>
+          <img className="dialog-icon-badge" src="/githubLogo.png" alt="Github Logo"></img>
+        )}
+        {linkedIn && (
+          <img className="dialog-icon-badge" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png" alt="Linkedin Logo"></img>
         )}
         {udemy && (
           <img
             className="dialog-icon-badge"
             src="https://play-lh.googleusercontent.com/dsCkmJE2Fa8IjyXERAcwc5YeQ8_NvbZ4_OI8LgqyjILpXUfS5YhEcnAMajKPrZI-og"
+            alt="Udemy Logo"
           ></img>
         )}
         {vilniusTech && (
           <img
             className="dialog-icon-badge"
             src="https://yt3.ggpht.com/ytc/AKedOLRmYAgv1n_cAoGhIpuBJz5tUs8VI0POfntCDO_mrA=s900-c-k-c0x00ffffff-no-rj"
+            alt="Vilnius Tech Logo"
+          />
+        )}
+        {gallery && (
+          <img
+            className="dialog-icon-badge"
+            src="https://www.phoca.cz/images/projects/phoca-gallery-r.png"
+            alt="Gallery Logo"
           />
         )}
       </div>

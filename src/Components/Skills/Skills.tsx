@@ -135,6 +135,7 @@ const Skills = () => {
             text="Following Udemy courses and Curriculum. Created web applications: tic tac toe game, restaurant webpage and more also acquired expieriance in various frameworks."
             imgLink="/logo/javascript/logo512.webp"
             vilniusTech
+            linkedIn
           />
           <DialogWindow
             title="Python"
@@ -208,6 +209,7 @@ const Skills = () => {
             text="During Graphic design curriculum I used Adobe Illustrator to remake provided icons with vectors, and created my own icons, logos and ilustrations."
             imgLink="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/2101px-Adobe_Illustrator_CC_icon.svg.png"
             vilniusTech
+            gallery
           >
             <Gallery pictures={ADOBE_ILLUSTRATOR} />
           </DialogWindow>
