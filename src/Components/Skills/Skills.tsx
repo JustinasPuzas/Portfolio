@@ -24,7 +24,7 @@ const PYTHON_COURSES = [
     url: "https://www.udemy.com/course/complete-python-developer-zero-to-mastery",
     name: "Complete Python Developer in 2022: Zero to Mastery",
     description:
-      "This course is designed to help you become a Python developer. It will teach you the basics of programming, data structures, and algorithms. It will also teach you how to write your own programs and how to use the Python language.",
+      "In this course i learned the basics of programming, data structures, and algorithms. Also i learned how to write programs and how to use the Python language.",
     certificateURL:
       "https://www.udemy.com/certificate/UC-e5e77c21-4b9e-49e9-a9d9-8aa5ad71c42d/",
     certificateImg:
