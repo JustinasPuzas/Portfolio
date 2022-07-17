@@ -23,8 +23,8 @@ const Udemy = ({ courses }: CourseProps) => {
       {courses.map(
         ({ name, url, description, certificateURL, certificateImg }) => (
           <>
-            <ListItem onClick={() => window.open(url, "_blank")}  button key={url}>
-              <div className="dialog-list-text">
+            <ListItem button key={url}>
+              <div onClick={() => window.open(url, "_blank")} className="dialog-list-text udemy-list-text">
                 <h3 className="dialog-list-title">{name}</h3>
                 <p className="dialog-list-description">{description}</p>
               </div>

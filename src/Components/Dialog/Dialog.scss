@@ -101,11 +101,12 @@
 }
 
 .dialog-list-text {
+  display:flex;
+  flex-direction: column;
   font-size: 1.2rem;
   font-weight: lighter;
   margin-top: 5px;
   margin-bottom: 5px;
-  overflow: wrap;
 }
 
 .dialog-list-title {
