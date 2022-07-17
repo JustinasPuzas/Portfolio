@@ -56,7 +56,7 @@ const Contacts = () => {
             alt="linkedin"
           />
         </a>
-        <a href="https://github.com/JustinasPuzas" target="_blank">
+        <a href="https://github.com/JustinasPuzas" target="_blank" rel="noopener noreferrer">
           <img className="github-icon" src="/githubLogo.png" alt="github" />
         </a>
       </div>

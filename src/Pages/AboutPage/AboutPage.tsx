@@ -1,5 +1,5 @@
 import AboutMe from "../../Components/AboutMe/AboutMe";
-import Card, {CardProps} from "../../Components/Card/Card";
+import Card from "../../Components/Card/Card";
 import Skills from "../../Components/Skills/Skills";
 import Education from "../../Components/Education/Education";
 import Contacts from "../../Components/Contacts/Contacts";

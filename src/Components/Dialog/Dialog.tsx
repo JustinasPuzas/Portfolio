@@ -104,7 +104,7 @@ const DialogWindow = ({
             >
               <CloseIcon />
             </IconButton>
-            {imgLink != "/favicon.ico" ? (
+            {imgLink !== "/favicon.ico" ? (
               <img
                 className="dialog-icon"
                 src={imgLink}

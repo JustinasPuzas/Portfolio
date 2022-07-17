@@ -1,11 +1,9 @@
-import React, { useState } from "react";
-import logo from "./logo.svg";
+import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import NavBar from "./Components/NavBar/NavBar";
 import HomePage from "./Pages/HomePage/HomePage";
 import AboutPage from "./Pages/AboutPage/AboutPage";
-import WorksPage from "./Pages/WorksPage/WorksPage";
 
 function App() {
   return (
