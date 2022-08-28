@@ -1,6 +1,6 @@
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import Tooltip from "@mui/material/Tooltip";
-import ContactPhoneOutlinedIcon from '@mui/icons-material/ContactPhoneOutlined';
+import ContactPhoneOutlinedIcon from "@mui/icons-material/ContactPhoneOutlined";
 
 import "./Contacts.css";
 
@@ -43,7 +43,7 @@ const Contacts = () => {
           </Tooltip>
         </div>
       </div>
-      <h2 className="card-title">Socials</h2>
+      <h2 className="card-title socials-title">Socials</h2>
       <div className="socials-container">
         <a
           href="https://www.linkedin.com/in/justinas-puzas/"
@@ -56,7 +56,11 @@ const Contacts = () => {
             alt="linkedin"
           />
         </a>
-        <a href="https://github.com/JustinasPuzas" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/JustinasPuzas"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img className="github-icon" src="/githubLogo.png" alt="github" />
         </a>
       </div>

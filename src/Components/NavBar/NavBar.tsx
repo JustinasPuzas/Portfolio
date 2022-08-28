@@ -16,7 +16,7 @@ export default function NavBar() {
   };
 
   return (
-    <div className={location.pathname === "/" ? "hidden" : "navbar"}>
+    <nav className={location.pathname === "/" ? "hidden" : "navbar"}>
       <NavLink to="/">
         <ArrowBackIosNewIcon fontSize="large" />
       </NavLink>
@@ -62,6 +62,6 @@ export default function NavBar() {
           </NavLink>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 }
