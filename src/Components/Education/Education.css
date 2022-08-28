@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+.education-container {
+  margin-left: 15px;
+}
+
 .education-title {
   font-size: 1.2rem;
   font-weight: bold;
