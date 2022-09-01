@@ -32,7 +32,7 @@ const Contacts = () => {
             <ContentCopyIcon />
           </Tooltip>
         </div>
-        <div
+        {/* <div
           onClick={() => {
             navigator.clipboard.writeText("+37061739176");
           }}
@@ -41,7 +41,7 @@ const Contacts = () => {
           <Tooltip title="Copy!" placement="top-end">
             <ContentCopyIcon />
           </Tooltip>
-        </div>
+        </div> */}
       </div>
       <h2 className="card-title socials-title">Socials</h2>
       <div className="socials-container">
