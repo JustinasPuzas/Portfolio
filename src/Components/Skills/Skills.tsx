@@ -184,7 +184,6 @@ const Skills = () => {
             imgLink="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/2048px-GraphQL_Logo.svg.png"
           />
           <DialogWindow title="MongoDB" text="" imgLink="mongoDBLogo.png" linkedIn />
-          <DialogWindow title="Express" text="" imgLink="/expressLogo.png" />
           <DialogWindow
             title="Chai"
             text=""
